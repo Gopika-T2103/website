@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+} */
+
+.navbar{
+    display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content:center;
+    align-items: center;
+    background-color:white;
+    padding: 0 150px;
+    position: fixed;
+    height: 120px;
+    width: 100%;
+    
+}
+.navigation{
+    display: flex;
+    font-size: 38px;
+    /* margin: 0;
+    padding: 0;
+    gap: 20px; */
+    right: 150px;
+    justify-content:space-evenly ;
+    position: fixed;
+}
+li{
+    list-style: none;
+    padding: 15px;
+    display: flex;
+    float: right;
+}
+li a{
+    text-decoration:wavy;
+    display: flex;
+    color: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+li a:hover{
+    text-decoration: underline;
+    background:white;
+    color:darkblue;
+    padding: 3px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.navbar img{
+    height: 93px;
+    left: 150px;
+    position: fixed;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding: 160px 20px 60px;
+    background-color: #fff;
+}
+
+.contact-main {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-center h3.main {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #001952; 
+    margin-bottom: 10px;
+}
+
+.contact-center h3 strong {
+    font-weight: 700;
+}
+
+.contact-center p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact-us {
+    background-color:rgb(243, 239, 239); 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.details {
+    margin-bottom: 20px;
+}
+
+.details label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.details input,
+.details textarea {
+    width: 80%;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.contact-btn {
+    width: 60%;
+    background-color: #001952;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #0033a0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-main {
+        padding: 0 10px;
+    }
+}
+
+
+
+
+
+
+footer {
+  background-color: #fff;
+  padding: 40px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+.footer-column h5 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #010101;
+}
+.footer-column p,
+.footer-column a {
+  font-size: 1rem;
+  line-height: 1.6;
+  color:rgb(41, 40, 40);
+  text-decoration: none;
+  font-weight:bold;
+}
+.footer-column a:hover {
+  text-decoration: underline;
+  color: #110066;
+}
+.footer-columns p,
+.footer-columns a {
+  font-size: 1rem;
+  line-height: 1.6;
+  color:rgb(41, 40, 40);
+  text-decoration: none;
+  font-weight:bold;
+  text-decoration: underline;
+}
+.footer-columns {
+  flex: 1;
+  min-width: 250px;
+}
+.footer-columns h5 {
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #090909;
+}
+.footer-columns a:hover {
+  text-decoration: underline;
+  color: #110066;
+}
+/* Subscribe form styles */
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe-form input{
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.subscribe-form button {
+  background-color: #000066;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 50%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  line-height: 1;
+}
+.subscribe-form button:hover {
+  opacity: 0.9;
+  background-color: #2049eb;
+  font-weight: bold;
+}
+/* Social Icons */
+.links {
+  display: flex;
+  justify-content:flex-start;
+  gap: 20px;
+  padding: 60px 60px;
+}
+
+.links i {
+  font-size: 1.5rem;
+  color: black;
+  transition: transform 0.3s;
+}
+
+.links i:hover {
+  transform: scale(1.2);
+}
+
+/* Bottom text */
+p.copyright {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: #333;
+  padding: 60px 60px;
+  /* padding-bottom: 60px; */
+}
+footer strong{
+    color: #000066;
+    font-weight: bold;
+}
