@@ -2,12 +2,6 @@
     margin: 0;
     padding: 0;
 }
-/* body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-} */
-
 .navbar{
     display: flex;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -18,14 +12,12 @@
     position: fixed;
     height: 120px;
     width: 100%;
+    z-index: 5;
     
 }
 .navigation{
     display: flex;
     font-size: 38px;
-    /* margin: 0;
-    padding: 0;
-    gap: 20px; */
     right: 150px;
     justify-content:space-evenly ;
     position: fixed;
@@ -76,6 +68,7 @@ li a:hover{
     font-weight: 400;
     color: #001952; 
     margin-bottom: 10px;
+        animation: contact 2s ease-in-out forwards;
 }
 
 .contact-center h3 strong {
@@ -86,6 +79,7 @@ li a:hover{
     font-size: 1rem;
     color: #666;
     margin-bottom: 30px;
+        animation: contact 2s ease-in-out forwards;
 }
 
 .contact-us {
@@ -94,6 +88,7 @@ li a:hover{
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     text-align: left;
+        animation: contact 2s ease-in-out forwards;
 }
 
 .details {
@@ -106,6 +101,7 @@ li a:hover{
     color: #333;
     display: block;
     margin-bottom: 5px;
+        animation: contact 2s ease-in-out forwards;
 }
 
 .details input,
@@ -116,6 +112,7 @@ li a:hover{
     border-radius: 8px;
     font-size: 1rem;
     transition: border 0.3s ease;
+        animation: contact 2s ease-in-out forwards;
 }
 
 .contact-btn {
@@ -129,6 +126,7 @@ li a:hover{
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    animation: contact 2s ease-in-out forwards;
 }
 
 .contact-btn:hover {
@@ -141,8 +139,17 @@ li a:hover{
         padding: 0 10px;
     }
 }
-
-
+/* FOR Animation  */
+@keyframes contact{
+  from{
+    opacity: 0;
+    transform: translateZ(20PX) scale(0.8);
+  }
+  to{
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+  }
+}
 
 
 
@@ -170,6 +177,7 @@ footer {
   margin-bottom: 10px;
   font-weight: 600;
   color: #010101;
+  animation: bottomsection 4s ease-in-out forwards;
 }
 .footer-column p,
 .footer-column a {
@@ -178,6 +186,7 @@ footer {
   color:rgb(41, 40, 40);
   text-decoration: none;
   font-weight:bold;
+  animation: bottomsection 4s ease-in-out forwards;
 }
 .footer-column a:hover {
   text-decoration: underline;
@@ -191,6 +200,7 @@ footer {
   text-decoration: none;
   font-weight:bold;
   text-decoration: underline;
+  animation: bottomsection 4s ease-in-out forwards;
 }
 .footer-columns {
   flex: 1;
@@ -201,6 +211,7 @@ footer {
   margin-bottom: 10px;
   font-weight: 600;
   color: #090909;
+  animation: bottomsection 4s ease-in-out forwards;
 }
 .footer-columns a:hover {
   text-decoration: underline;
@@ -210,6 +221,7 @@ footer {
 .subscribe-form {
   display: flex;
   flex-direction: column;
+  animation: bottomsection 4s ease-in-out forwards;
 }
 .subscribe-form input{
   padding: 10px 20px;
@@ -217,24 +229,9 @@ footer {
   border-radius: 8px;
   margin-bottom: 10px;
   outline: none;
+  animation: bottomsection 4s ease-in-out forwards;
 }
 
-.subscribe-form button {
-  background-color: #000066;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  width: 50%;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  line-height: 1;
-}
-.subscribe-form button:hover {
-  opacity: 0.9;
-  background-color: #2049eb;
-  font-weight: bold;
-}
 /* Social Icons */
 .links {
   display: flex;
@@ -247,6 +244,7 @@ footer {
   font-size: 1.5rem;
   color: black;
   transition: transform 0.3s;
+     animation: bottomsection 4s ease-in-out forwards;
 }
 
 .links i:hover {
@@ -254,7 +252,7 @@ footer {
 }
 
 /* Bottom text */
-p.copyright {
+footer p.copyright {
   display: flex;
   justify-content: flex-start;
   font-size: 0.85rem;
@@ -266,4 +264,96 @@ p.copyright {
 footer strong{
     color: #000066;
     font-weight: bold;
+}
+@keyframes bottomsection{
+  from{
+    opacity: 0;
+    transform: translateZ(20PX) scale(0.8);
+  }
+  to{
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+  }
+}
+
+.container-btn{
+  display: flex;
+  align-items: flex-start;
+  justify-content:flex-start;
+}
+.sub-btn {
+  background-color: #000066;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  animation: bottomsection 7s ease-in-out forwards;
+}
+
+.sub-btn:hover {
+  color: #fff;
+  background: #007bff;
+}
+
+/* POPUP MESSEGE */
+.popup{
+  width: 400px;
+  background: #007bff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #7c7777;
+  visibility:hidden;
+  transition: transform 0.4s top 0.4s;
+}
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
+}
+.popup img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: bold;
+    margin: 30px 0 10px;
+    color: #fff;
+}
+.popup p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0 10px;
+    color: #fff;
+}
+.ok-btn{
+    width: 100%;
+    margin-top: 50px;
+    padding:10px 0;
+    background: #6fd649; 
+    color: #0e0d0d;
+    font-weight: bold;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    
+}
+.ok-btn:hover{
+    background-color: #08f32f;
+    color: #030303;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
 }
