@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovating the Future of IT Solutions</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="phone.css">
+    <script src="index.js" defer></script>
+    <script src="script.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
 </head>
 <body>
     <div class="heading"></div>
@@ -41,11 +45,11 @@
        <h2>Technology <br> Innovation <br> Success</h2>
        <div class="para">
         <p>
-            At <strong>OUBIQ Technology Solutions</strong>, we are dedicated to empowering  <br> businesses with cutting-edge IT solutions. Our mission is to transform   <br>
-            ideas into reality by leveraging the latest technology, innovation, and <br> industry best practices.   Whether you're a startup or an enterprise, we
-            provide scalable and customized solutions to enhance your digital <br> presence and   operational efficiency. <br><br>
-            With a team of highly skilled professionals, we specialize in web <br> development, mobile applications, digital marketing, cybersecurity, cloud <br>
-            solutions, and AI-driven technologies. Our goal is to help businesses <br> thrive in the digital landscape with innovative, results-driven strategies. 
+            At <strong>OUBIQ Technology Solutions</strong>, we are dedicated to empowering  businesses with cutting-edge IT solutions. Our mission is to transform  
+            ideas into reality by leveraging the latest technology, innovation, and industry best practices.  Whether you're a startup or an enterprise, we
+            provide scalable and customized solutions to enhance your digital presence and  operational efficiency.
+            With a team of highly skilled professionals, we specialize in web development, mobile applications, digital marketing, cybersecurity, cloud
+            solutions, and AI-driven technologies. Our goal is to help businesses thrive in the digital landscape with innovative, results-driven strategies. 
         </p>
        </div>
      </div>
@@ -99,128 +103,87 @@
     </section>
 
 
-    <!-- FEATURED SERVICES -->
-
-
-    <section class="feature">
-        <h2 class="main-heading">Featured Services</h2>
-        <div class="featured">
-            <div class="services">
-                <div class="swipercard">
-                    <img src="computer.png" alt="" class="icon">
-                    <h2 class="primar-heading">Website Development & Design</h2>
-                      <p class="center">
-                          <ul class="custom-list">
-                              <li> Custom Web Development</li>
-                              <li> E-Commerce Development</li>
-                              <li> UI/UX Design</li>
-                          </ul>
-                      </p>
-                </div>
-            </div>
-
-            <div class="services">
-                <div class="swipercard">
-                    <img src="mobile.png" alt="" class="icon">
-                    <h2 class="primar-heading">Mobile App Development</h2>
-                      <p class="center">
-                          <ul class="custom-list">
-                              <li> iOS And Android App Development</li>
-                              <li> Enterprise Mobile Solution</li>
-                              <li> App UI/UX Design</li>
-                          </ul>
-                      </p>
-                </div>
-            </div>
-
-            <div class="services">
-                <div class="swipercard">
-                    <img src="settings.png" alt="" class="icon">
-                    <h2 class="primar-heading">Software Development & IT Solution</h2>
-                      <p class="center">
-                          <ul class="custom-list">
-                              <li> Custom Software Development</li>
-                              <li> Cloud Solution</li>
-                              <li> Saas Development</li>
-                          </ul>
-                      </p>
-                </div>
-            </div>
-
-            <div class="services">
-                <div class="swipercard">
-                    <img src="horn.png" alt="" class="icon">
-                    <h2 class="primar-heading">Digital Marketing & Branding</h2>
-                      <p class="center">
-                          <ul class="custom-list">
-                              <li> SEO & Search Optimization</li>
-                              <li> Social Media Marketing</li>
-                              <li> PPC & Online Advertising</li>
-                          </ul>
-                      </p>
-                </div>
-            </div>
-
-            <div class="services">
-                <div class="swipercard">
-                    <img src="user.png" alt="" class="icon">
-                    <h2 class="primar-heading">Lead Generation & Bussiness Growth</h2>
-                      <p class="center">
-                          <ul class="custom-list">
-                              <li> B2B & B2C Lead Nuturing</li>
-                              <li> Coversion Rate Optimization</li>
-                              <li> Data Driven Marketing Campagin</li>
-                          </ul>
-                      </p>
-                </div>
-            </div>
-
-            <div class="services">
-                <div class="swipercard">
-                    <img src="cyber.png" alt="" class="icon">
-                    <h2 class="primar-heading">Cybersecurity & IT Support</h2>
-                      <p class="center">
-                          <ul class="custom-list">
-                              <li> Cybersecurity Solution</li>
-                              <li> IT Consulting & Support</li>
-                              <li> Network Security & Monitoring</li>
-                          </ul>
-                      </p>
-                </div>
-            </div>
-
-            <div class="services">
-                <div class="swipercard">
-                    <img src="cloud.png" alt="" class="icon">
-                    <h2 class="primar-heading">Cloud Computing & DevOps</h2>
-                      <p class="center">
-                          <ul class="custom-list">
-                              <li> Cloud Migration & Management</li>
-                              <li> DevOps Consulting</li>
-                              <li> CI/CD Pipeline Implementation</li>
-                          </ul>
-                      </p>
-                </div>
-            </div>
-
-            <div class="services">
-                <div class="swipercard">
-                    <img src="ai.png" alt="" class="icon">
-                    <h2 class="primar-heading">AI &Data Analytics</h2>
-                      <p class="center">
-                          <ul class="custom-list">
-                              <li> AI Powered Solutions</li>
-                              <li> Big Data & Bussiness Intelligence</li>
-                              <li> Machine Learning Development</li>
-                          </ul>
-                      </p>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
-
+    
+<section class="featured-services">
+  <h2>Featured Services</h2>
+  <div class="swiper featuredSwiper">
+    <div class="swiper-wrapper">
+      <!-- Repeat this slide 8 times -->
+      <div class="swiper-slide card">
+        <img src="computer.png" class="icon" alt="Service">
+        <h3>Website Development & Design</h3>
+        <ul>
+          <li>Custom Web Development</li>
+          <li>E-Commerce Development</li>
+          <li>UI/UX Design</li>
+        </ul>
+      </div>
+      <div class="swiper-slide card">
+        <img src="mobile.png" class="icon" alt="Service">
+        <h3>Mobile App Development</h3>
+        <ul><li> iOS And Android App Development</li>
+            <li> Enterprise Mobile Solution</li>
+            <li>App UI/UX Design</li>
+        </ul>
+      </div>
+      <div class="swiper-slide card">
+        <img src="settings.png" class="icon" alt="Service">
+        <h3>Software Development & IT Solution</h3>
+        <ul>
+          <li>Custom Software Development</li>
+          <li>Cloud Solution</li>
+          <li> Saas Development</li>
+        </ul>
+      </div>
+      <div class="swiper-slide card">
+        <img src="horn.png" class="icon" alt="Service">
+        <h3>Digital Marketing & Branding</h3>
+        <ul>
+          <li> SEO & Search Optimization</li>
+          <li>Social Media Marketing</li>
+          <li>PC & Online Advertising</li>
+        </ul>
+      </div>
+      <div class="swiper-slide card">
+        <img src="user.png" class="icon" alt="Service">
+        <h3>Lead Generation & Bussiness Growth</h3>
+        <ul>
+          <li>B2B & B2C Lead Nuturing</li>
+          <li>Coversion Rate Optimization</li>
+          <li> Data Driven Marketing Campagin</li>
+        </ul>
+      </div>
+      <div class="swiper-slide card">
+        <img src="cyber.png" class="icon" alt="Service">
+        <h3>Cybersecurity & IT Support</h3>
+        <ul>
+          <li> Cybersecurity Solution</li
+          ><li>IT Consulting & Support</li>
+          <li>Network Security & Monitoring</li>
+        </ul>
+      </div>
+      <div class="swiper-slide card">
+        <img src="cloud.png" class="icon" alt="Service">
+        <h3>Cloud Computing & DevOps</h3>
+        <ul>
+          <li>Cloud Migration & Management</li>
+          <li>DevOps Consulting</li>
+          <li>CI/CD Pipeline Implementation</li>
+        </ul>
+      </div>
+      <div class="swiper-slide card">
+        <img src="ai.png" class="icon" alt="Service">
+        <h3>AI &Data Analytics</h3>
+        <ul>
+          <li> AI Powered Solutions</li>
+          <li>Big Data & Bussiness Intelligence</li>
+          <li>Machine Learning Development</li>
+        </ul>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
 
 
 
@@ -279,19 +242,21 @@
 
   <div class="footer-column">
     <h5>Subscribe to our newsletter</h5>
-    <form class="subscribe-form" onsubmit="openPopup(event)">
+    <form class="subscribe-form">
       <input type="email" placeholder="Your email address" required autocomplete="off">
-      <div class="container">
-            <button type="submit" onclick="openPopup()" class="sub-btn">Submit</button>
+
+      <!-- BUTTON -->
+      <div class="container-btn">
+            <button type="submit" class="sub-btn" onclick="openPopup(event)">Submit</button>
                  <div class="popup" id="popup">
                     <img src="tickimage.jpg" alt="tick">
                     <h2>Thank You!</h2>
                     <p>Your Message is successfully recorded.Thank You!</p>
-                    <button type="button" onclick="closePopup()">OK</button>
+                    <button type="button" class="ok-btn" onclick="closePopup()">OK</button>
             </div>
         </div>
     </form>
-  </div>
+    </div>
 </div>
 
 <div class="links">
@@ -304,35 +269,17 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-    let popup=document.getElementById("popup");
-    function openPopup(event){
-        event.preventDefault();
-        popup.classList.add("open-popup");
-    }
-    function closePopup(){
-        popup.classList.remove("open-popup");
-    }
-</script>
-
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-   const toggle = document.getElementById('menu-toggle');
-   const nav = document.getElementById('navigation');
-
-    toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});
-
-// swiper....
-
-new Swiper(".featured", {
-    slidesPerView: 3,
+  new Swiper(".featuredSwiper", {
+    slidesPerView: 2.3, // Always 2.3 slides at a time
     centeredSlides: true,
     spaceBetween: 30,
-    loop: false,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -347,15 +294,21 @@ new Swiper(".featured", {
       slideShadows: false,
     },
     breakpoints: {
-      320: {
-        slidesPerView: 1,
+      0: {
+        slidesPerView: 2.3, // mobile still shows 2.3
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2.3,
+      },
+      1024: {
+        slidesPerView: 2.3,
       },
     },
   });
- -->
+</script>
+
+
+
 
 </body>
 </html>
