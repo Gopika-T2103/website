@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service</title>
     <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="phone.css">
+    <script src="index.js" defer></script>
      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -12,6 +14,11 @@
     <header>
         <nav class="navbar">
             <img src="oubiq.avif" alt="oubiq">
+            <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
             <ul class="navigation">
                 <li class="item"><a href="index.html">Home</a></li>
                 <li class="item"><a href="service.html" target="_blank">Services</a></li>
@@ -175,15 +182,15 @@
     <h5>Subscribe to our newsletter</h5>
     <form class="subscribe-form">
       <input type="email" placeholder="Your email address" required autocomplete="off">
-      <!-- <div class="container"> -->
-            <button type="submit">Submit</button>
-                 <!-- <div class="popup" id="popup">
+     <div class="container-btn">
+            <button type="submit" class="sub-btn" onclick="openPopup(event)">Submit</button>
+                 <div class="popup" id="popup">
                     <img src="tickimage.jpg" alt="tick">
                     <h2>Thank You!</h2>
                     <p>Your Message is successfully recorded.Thank You!</p>
-                    <button type="button" onclick="closePopup()">OK</button>
-            </div> -->
-        <!-- </div> -->
+                    <button type="button" class="ok-btn" onclick="closePopup()">OK</button>
+            </div>
+        </div>
     </form>
   </div>
 </div>
@@ -195,22 +202,6 @@
       <p class="copyright">© 2025 <strong>OUBIQ.</strong> All Rights Reserved.</p>
     </div>
 </footer>
-
-
-<!-- <script>
-
-    //   popup message
-    
-    let popup=document.getElementById("popup");
-            function openPopup(event){
-                event.preventDefault();
-                popup.classList.add("open-popup");
-            }
-            function closePopup(){
-                popup.classList.remove("open-popup");
-            }
-</script>
- -->
 
 </body>
 </html>
