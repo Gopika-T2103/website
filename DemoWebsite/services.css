@@ -2,11 +2,6 @@
     margin: 0;
     padding: 0;
 }
-/* body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-} */
 
 .navbar{
     display: flex;
@@ -18,14 +13,12 @@
     position: fixed;
     height: 120px;
     width: 100%;
+    z-index: 5;
     
 }
 .navigation{
     display: flex;
     font-size: 38px;
-    /* margin: 0;
-    padding: 0;
-    gap: 20px; */
     right: 150px;
     justify-content:space-evenly ;
     position: fixed;
@@ -80,7 +73,7 @@ li a:hover{
   flex: 1;
   padding-right: 20px;
   transform: translateY(30px);
-  animation: serviceanimation 0.7s ease-in-out forwards;
+  animation: serviceanimation 2s ease-in-out forwards;
 }
 
 .services-left h2.main {
@@ -88,7 +81,7 @@ li a:hover{
   color: #06114f;
   margin-bottom: 20px;
   line-height: 3.6;
-   animation: serviceanimation 0.7s ease-in-out forwards;
+   animation: serviceanimation 2s ease-in-out forwards;
 }
 
 .services-left p {
@@ -96,7 +89,7 @@ li a:hover{
   color: #333;
   line-height: 1.6;
   margin-bottom: 30px;
-   animation: serviceanimation 0.7s ease-in-out forwards;
+   animation: serviceanimation 2s ease-in-out forwards;
 }
 
 .enquire-btn {
@@ -109,7 +102,7 @@ li a:hover{
   width: 80%;
   cursor: pointer;
   transition: background-color 0.3s ease;
-   animation: serviceanimation 0.7s ease-in-out forwards;
+   animation: serviceanimation 2s ease-in-out forwards;
 }
 
 .enquire-btn:hover {
@@ -126,13 +119,19 @@ li a:hover{
 .services-right img {
   max-width: 100%;
   height: auto;
-   animation: serviceanimation 0.7s ease-in-out forwards;
+   animation: serviceanimation 2s ease-in-out forwards;
 }
 @keyframes serviceanimation{
   from{
     opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
+
 
 
 /* web development section */
@@ -160,18 +159,21 @@ li a:hover{
   /* max-width: 100%; */
   width: 600px;
   height: 400px;
+  animation: web 6s ease-in-out forwards;
 }
 .content-right h2.main{
   font-size: 2.5rem;
   color: #06114f;
   margin-bottom: 20px;
   line-height: 1.3;
+  animation: web 4s ease-in-out forwards;
 }
 .content-right p{
   font-size: 1.5rem;
   color:black;
   margin-bottom: 30px;
   line-height: 1.1;
+  animation: web 6s ease-in-out forwards;
 }
 .custom-right{
   all: unset;
@@ -179,6 +181,7 @@ li a:hover{
   display: block;
   padding-left: 20px;
   margin-top: 10px;
+  animation: web 6s ease-in-out forwards;
 }
 /* .custom-right li::before{
   content: "•";
@@ -191,8 +194,18 @@ li a:hover{
   margin-bottom: 8px;
   font-size: 1.5rem;
   line-height: 1;
+  animation: web 6s ease-in-out forwards;
 }
-
+@keyframes web{
+  from{
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 
 /* E-Commerce section*/
 
@@ -220,12 +233,14 @@ li a:hover{
    color: #06114f;
    margin-bottom: 20px;
    line-height: 1.3;
+    animation: comm 8s ease-in-out forwards;
 }
 .commerce-left p{
    font-size: 1.5rem;
    color: black;
    margin-bottom: 20px;
    line-height: 1.1;
+    animation: comm 8s ease-in-out forwards;
 }
 .custom-left{
   all: unset;
@@ -233,6 +248,7 @@ li a:hover{
   display: block;
   padding-left: 20px;
   margin-top: 10px;
+  
 }
 .custom-left li{
   all: unset;
@@ -240,6 +256,7 @@ li a:hover{
   margin-bottom: 8px;
   font-size: 1.5rem;
   line-height: 1;
+   animation: comm 8s ease-in-out forwards;
 }
 .commerce-right {
   flex: 1;
@@ -249,8 +266,18 @@ li a:hover{
 .commerce-right img {
   max-width: 100%;
   height: auto;
+   animation: comm 8s ease-in-out forwards;
 }
-
+@keyframes comm{
+  from{
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 
 /* DIGITAL */
 .digital{
@@ -273,14 +300,16 @@ li a:hover{
   padding-right: 20px;
 }
 .wraps-left img{
-  width: 700px;
-  height: 500px;
+  width: 500px;
+  height: 350px;
+      animation: digi 10s ease-in-out forwards;
 }
 .digital-right h2.main{
   font-size: 2.5rem;
   color: #06114f;
   margin-bottom: 30px;
   line-height: 1.3;
+      animation: digi 10s ease-in-out forwards;
 }
 .digital-right p{
   font-size: 1.5rem;
@@ -288,6 +317,7 @@ li a:hover{
   font-weight: lighter;
   margin-bottom: 30px;
   line-height: 1.1;
+      animation: digi 10s ease-in-out forwards;
 }
 .customs-right{
   all: unset;
@@ -302,6 +332,17 @@ li a:hover{
   margin-bottom: 8px;
   font-size: 1.5rem;
   line-height: 1;
+     animation: digi 10s ease-in-out forwards;
+}
+@keyframes digi{
+  from{
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 
@@ -329,13 +370,14 @@ flex-wrap: nowrap;
    font-size: 2.5rem;
    color: #06114f;
    margin-bottom: 20px;
-   line-height: 2.6;
+  animation: cyber 11s ease-in-out forwards;
 }
 .cyber-left p{
    font-size: 1.5rem;
    color: black;
    margin-bottom: 20px;
    line-height: 1.1;
+      animation: cyber 11s ease-in-out forwards;
 }
 .cybersec-left{
   all: unset;
@@ -350,6 +392,7 @@ flex-wrap: nowrap;
   margin-bottom: 8px;
   font-size: 1.3rem;
   line-height: 1;
+  animation: cyber 11s ease-in-out forwards;
 }
 .cyberwrap-right {
   flex: 1;
@@ -357,10 +400,20 @@ flex-wrap: nowrap;
 }
 
 .cyberwrap-right img {
-  width: 650px;
-  height: 400px;
+  width: 500px;
+  height: 350px;
+   animation: cyber 11s ease-in-out forwards;
 }
-
+@keyframes cyber{
+  from{
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
 
 
 /* CLOUD SECTION */
@@ -384,14 +437,16 @@ flex-wrap: nowrap;
   padding-right: 20px;
 }
 .cloudwrap-left img{
-  width: 700px;
-  height: 500px;
+  width: 500px;
+  height: 350px;
+  animation: cloud 12s ease-in-out forwards;
 }
 .cloud-right h2.main{
   font-size: 2.5rem;
   color: #06114f;
   margin-bottom: 30px;
   line-height: 1.3;
+   animation: cloud 12s ease-in-out forwards;
 }
 .cloud-right p{
   font-size: 1.5rem;
@@ -399,6 +454,7 @@ flex-wrap: nowrap;
   font-weight: lighter;
   margin-bottom: 30px;
   line-height: 1.1;
+   animation: cloud 12s ease-in-out forwards;
 }
 .customcloud{
   all: unset;
@@ -413,6 +469,17 @@ flex-wrap: nowrap;
   margin-bottom: 8px;
   font-size: 1.5rem;
   line-height: 1;
+   animation: cloud 12s ease-in-out forwards;
+}
+@keyframes cloud{
+  from{
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 
@@ -442,6 +509,7 @@ footer {
   margin-bottom: 10px;
   font-weight: 600;
   color: #000066;
+  animation: bottomsection 7s ease-in-out forwards;
 }
 .footer-column p,
 .footer-column a {
@@ -450,6 +518,7 @@ footer {
   color:rgb(41, 40, 40);
   text-decoration: none;
   font-weight:bold;
+  animation: bottomsection 7s ease-in-out forwards;
 }
 
 .footer-column a:hover {
@@ -464,6 +533,7 @@ footer {
   text-decoration: none;
   font-weight:bold;
   text-decoration: underline;
+  animation: bottomsection 7s ease-in-out forwards;
 }
 .footer-columns {
   flex: 1;
@@ -474,6 +544,7 @@ footer {
   margin-bottom: 10px;
   font-weight: 600;
   color: #000066;
+  animation: bottomsection 7s ease-in-out forwards;
 }
 .footer-columns a:hover {
   text-decoration: underline;
@@ -491,24 +562,9 @@ footer {
   border-radius: 8px;
   margin-bottom: 10px;
   outline: none;
+  animation: bottomsection 7s ease-in-out forwards;
 }
 
-.subscribe-form button {
-  background-color: #000066;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 600;
-  line-height: 1;
-  width: min-content;
-}
-.subscribe-form button:hover {
-  opacity: 0.9;
-  background-color: #2049eb;
-  font-weight: bold;
-}
 /* Social Icons */
 .links {
   display: flex;
@@ -521,6 +577,7 @@ footer {
   font-size: 1.5rem;
   color: black;
   transition: transform 0.3s;
+  animation: bottomsection 7s ease-in-out forwards;
 }
 
 .links i:hover {
@@ -542,6 +599,16 @@ footer strong{
     font-weight: bold;
 }
 
+@keyframes bottomsection{
+  from{
+    opacity: 0;
+    transform: translateZ(20PX) scale(0.8);
+  }
+  to{
+    opacity: 1;
+    transform: translateZ(0) scale(1);
+  }
+}
 
 
 /* Responsive fix for small screens */
@@ -583,3 +650,84 @@ footer strong{
   } */
 }
 
+.container-btn{
+  display: flex;
+  align-items: flex-start;
+  justify-content:flex-start;
+}
+.sub-btn {
+  background-color: #000066;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  animation: bottomsection 7s ease-in-out forwards;
+}
+
+.sub-btn:hover {
+  color: #fff;
+  background: #007bff;
+}
+
+/* POPUP MESSEGE */
+.popup{
+  width: 400px;
+  background: #007bff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #7c7777;
+  visibility:hidden;
+  transition: transform 0.4s top 0.4s;
+}
+.open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
+}
+.popup img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: bold;
+    margin: 30px 0 10px;
+    color: #fff;
+}
+.popup p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0 10px;
+    color: #fff;
+}
+.ok-btn{
+    width: 100%;
+    margin-top: 50px;
+    padding:10px 0;
+    background: #6fd649; 
+    color: #0e0d0d;
+    font-weight: bold;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    
+}
+.ok-btn:hover{
+    background-color: #08f32f;
+    color: #030303;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
